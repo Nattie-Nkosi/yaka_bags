@@ -1,3 +1,17 @@
+// Initialize and add the map
+function initMap() {
+    // Your location
+    const loc = { lat: -26.046820, lng: 28.106850 };
+    // Centered map on location
+    const map = new google.maps.Map(document.querySelector('.map'), {
+      zoom: 14,
+      center: loc
+    });
+    // The marker, positioned at location
+    const marker = new google.maps.Marker({ position: loc, map: map });
+  }
+
+
 $(document).ready(function() {
     
     
