@@ -15,7 +15,6 @@
     .error {background-color: rgb(209, 46, 46, 0.8);}
 */
 
-
 /* ----------------------------------------------- */
 /* BASIC SETUP */
 /* ----------------------------------------------- */
@@ -30,16 +29,19 @@ html,
 body {
     background-color: #fff;
     color: #555;
-    font-family: 'Lato', 'Arial', sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
 
-.clearfix {zoom: 1;}
+.clearfix {
+    zoom: 1;
+}
+
 .clearfix:after {
-    content: '.';
+    content: ".";
     clear: both;
     display: block;
     height: 0;
@@ -49,7 +51,6 @@ body {
 /* ----------------------------------------------- */
 /* REUSABLE COMPONENTS */
 /* ----------------------------------------------- */
-
 
 .row {
     max-width: 1140px;
@@ -116,7 +117,6 @@ h2:after {
     line-height: 145%;
 }
 
-
 /* ----- ICONS ----- */
 .icon-big {
     font-size: 350%;
@@ -132,7 +132,7 @@ h2:after {
     color: #882462;
     font-size: 120%;
     margin-right: 10px;
-    
+
     /*secrets to align text and icons*/
     line-height: 120%;
     vertical-align: middle;
@@ -160,7 +160,7 @@ a:active {
 /* ----- BUTTONS ----- */
 .btn:link,
 .btn:visited,
-input[type=submit] {
+input[type="submit"] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -172,7 +172,7 @@ input[type=submit] {
 
 .btn-full:link,
 .btn-full:visited,
-input[type=submit] {
+input[type="submit"] {
     background-color: #882462;
     border: 1px solid #882462;
     color: #fff;
@@ -187,8 +187,8 @@ input[type=submit] {
 
 .btn:hover,
 .btn:active,
-input[type=submit]:hover,
-input[type=submit]:active {
+input[type="submit"]:hover,
+input[type="submit"]:active {
     background-color: #601945;
 }
 
@@ -203,14 +203,19 @@ input[type=submit]:active {
     color: #fff;
 }
 
-
 /* ----------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------- */
 
 header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/hero-min.jpeg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero-min.jpeg);
+    background-image: -webkit-gradient(linear,
+            left top,
+            left bottom,
+            from(rgba(0, 0, 0, 0.7)),
+            to(rgba(0, 0, 0, 0.7))),
+        url(img/hero-min.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(img/hero-min.jpeg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -234,7 +239,7 @@ header {
     margin-top: 20px;
 }
 
-.logo-black { 
+.logo-black {
     display: none;
     height: 50px;
     width: auto;
@@ -271,7 +276,6 @@ header {
     border-bottom: 2px solid #882462;
 }
 
-
 /* Mobile navi */
 .mobile-nav-icon {
     float: right;
@@ -285,7 +289,6 @@ header {
     color: #fff;
 }
 
-
 /* Sticky navi */
 .sticky {
     position: fixed;
@@ -297,7 +300,9 @@ header {
     z-index: 9999;
 }
 
-.sticky .main-nav { margin-top: 18px; }
+.sticky .main-nav {
+    margin-top: 18px;
+}
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
@@ -305,8 +310,13 @@ header {
     color: #555;
 }
 
-.sticky .logo { display: none; }
-.sticky .logo-black { display: block; }
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logo-black {
+    display: block;
+}
 
 /* ----------------------------------------------- */
 /* FEATURES */
@@ -315,7 +325,6 @@ header {
 .section-features .long-copy {
     margin-bottom: 30px;
 }
-
 
 /* ----------------------------------------------- */
 /* MEALS */
@@ -361,6 +370,82 @@ header {
     transform: scale(1.03);
 }
 
+/* ----------------------------------------------- */
+/* BAGS INFO SECTION */
+/* ----------------------------------------------- */
+.bags-info {
+    display: flex;
+}
+
+.bags-info a {
+    margin-left: 15%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+    flex: 50%;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.gallery__item--6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.info .order {
+    margin-left: 5%;
+    padding: 4%;
+}
+
+.info h3 {
+    margin-left: 15%;
+    padding: 2%;
+}
 
 
 /* ----------------------------------------------- */
@@ -374,7 +459,6 @@ header {
 .steps-box {
     margin-top: 30px;
 }
-
 
 .steps-box:first-child {
     text-align: right;
@@ -424,7 +508,6 @@ header {
     margin-right: 10px;
 }
 
-
 /* ----------------------------------------------- */
 /* CITIES */
 /* ----------------------------------------------- */
@@ -439,14 +522,19 @@ header {
     margin-bottom: 5px;
 }
 
-
 /* ----------------------------------------------- */
 /* TESTIMONIALS */
 /* ----------------------------------------------- */
 
 .section-testimonials {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0.8)), to(rgba(0,0,0,0.8))), url(/resources/img/image5.jpeg);
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(/resources/img/image5.jpeg);
+    background-image: -webkit-gradient(linear,
+            left top,
+            left bottom,
+            from(rgba(0, 0, 0, 0.8)),
+            to(rgba(0, 0, 0, 0.8))),
+        url(/resources/img/image5.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(/resources/img/image5.jpeg);
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
@@ -482,7 +570,6 @@ cite img {
     vertical-align: middle;
 }
 
-
 /* ----------------------------------------------- */
 /* SIGN UP */
 /* ----------------------------------------------- */
@@ -515,7 +602,6 @@ cite img {
     border: 0;
 }
 
-
 .plan-price {
     font-size: 300%;
     margin-bottom: 10px;
@@ -540,7 +626,6 @@ cite img {
     padding: 5px 0;
 }
 
-
 /* ----------------------------------------------- */
 /* FORM */
 /* ----------------------------------------------- */
@@ -550,8 +635,8 @@ cite img {
     margin: 0 auto;
 }
 
-input[type=text],
-input[type=email],
+input[type="text"],
+input[type="email"],
 select,
 textarea {
     width: 100%;
@@ -564,15 +649,21 @@ textarea {
     height: 100px;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
     margin: 10px 5px 10px 0;
 }
 
-*:focus {outline: none;}
+*:focus {
+    outline: none;
+}
 
-.success {background-color: rgb(38, 192, 68, 0.8);}
-.error {background-color: rgb(209, 46, 46, 0.8);}
+.success {
+    background-color: rgb(38, 192, 68, 0.8);
+}
 
+.error {
+    background-color: rgb(209, 46, 46, 0.8);
+}
 
 /* ----------------------------------------------- */
 /* FOOTER */
@@ -606,7 +697,7 @@ footer {
 }
 
 .footer-nav li a:link,
-.footer-nav li a:visited, 
+.footer-nav li a:visited,
 .social-links li a:link,
 .social-links li a:visited {
     text-decoration: none;
@@ -650,15 +741,11 @@ footer {
     color: #517fa4;
 }
 
-
 footer p {
     color: #888;
     text-align: center;
     margin-top: 20px;
 }
-
-
-
 
 /* ----------------------------------------------- */
 /* Animations */
@@ -666,8 +753,7 @@ footer p {
 
 .js--wp-1,
 .js--wp-2,
-.js--wp-3
-{
+.js--wp-3 {
     opacity: 0;
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
