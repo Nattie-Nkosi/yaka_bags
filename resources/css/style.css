@@ -57,6 +57,7 @@ body {
     margin: 0 auto;
 }
 
+
 section {
     padding: 80px 0;
 }
@@ -375,6 +376,11 @@ header {
 /* ----------------------------------------------- */
 .bags-info {
     display: flex;
+    align-items: center;
+}
+
+.bags-info > .info {
+    flex: 1;
 }
 
 .bags-info a {
@@ -637,6 +643,7 @@ cite img {
 
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 select,
 textarea {
     width: 100%;

@@ -92,6 +92,27 @@
         margin: 0 0 4% 0;
     }
 
+    .logo {
+        height: 80px;
+        width: auto;
+        float: left;
+        margin-top: 20px;
+    }
+
+    .bags-info {
+        display: grid;
+        grid-template-areas: 
+        "box1"
+        "box2";
+    }
+    
+    .gallery {
+        grid-area: box1;
+    }
+
+    .info {
+        grid-area: box2;
+    }
 
     .main-nav {
         display: none;
@@ -184,6 +205,13 @@
 @media only screen and (max-width: 480px) {
     section {
         padding: 25px 0;
+    }
+
+    .logo {
+        height: 50px;
+        width: auto;
+        float: left;
+        margin-top: 20px;
     }
 
     .contact-form {
