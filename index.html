@@ -299,7 +299,7 @@
       </div>
 
       <div class="row">
-          <div class="col span-1-of-2 box">
+          <div class="col span-3-of-3 box">
             <div class="row">
               <form method="post" action="mailer.php" class="contact-form">
                 <div class="row">
@@ -363,18 +363,23 @@
               </form>
             </div>
         </div>
-        <div class="col span-1-of-2 box">
-          <i class="fa fa-map-marker" style="font-size:60px; color:#882462; margin-bottom: 10px"></i>
-          <h3>
-            <p>Unit 54 Sheffield 2 </br>
-              Cnr Maritz & Bergrivier Drive </br>
-              Terenure </br>
-              Kempton Park </br>
-              1619 <br>
-              <strong>Phone :</strong> +27 79 626 3991<br>
-              <strong>Email :</strong> <a href="mailto:hello@yakabags.co.za">hello@yakabags.co.za</a> </p>
-            
-          </h3>
+        <div class="col span-3-of-3 box">
+          <div class="row">
+            <i class="fa fa-map-marker" style="font-size:60px; color:#882462; margin-bottom: 10px"></i>
+          </div>
+           <div class="row">
+            <h3>
+              <p>Unit 54 Sheffield 2 </br>
+                Cnr Maritz & Bergrivier Drive </br>
+                Terenure </br>
+                Kempton Park </br>
+                1619 <br>
+                <strong>Phone :</strong> +27 79 626 3991<br>
+                <strong>Email :</strong> <a href="mailto:hello@yakabags.co.za">hello@yakabags.co.za</a> </p>
+              
+              </h3>
+           </div>
+  
       </div>
       </div>
       
@@ -412,17 +417,18 @@
         </div>
         <div class="row">
           <p>
-            Copyright &copy; 2020 by Yaka Bags. All rights reserved.
+            Copyright © <span class="year"></span> <strong><span>Yaka bags</span></strong>. All Rights Reserved
           </p>
         </div>
       </div>
     </footer>
 
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDnQMGs8Bp0h9WnFOBFg_X-Oc9rn_YjJg&callback=initMap"
-      async
-      defer
-    ></script>
+    <script>
+      const yearEl = document.querySelector('.year');
+      const date = new Date();
+      const year = date.getFullYear();
+      yearEl.innerHTML = year;
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>

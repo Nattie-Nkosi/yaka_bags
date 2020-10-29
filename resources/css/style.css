@@ -670,8 +670,8 @@ textarea {
     -webkit-box-sizing: border-box;
     -o-box-sizing: border-box;
     -ms-box-sizing: border-box;
-    border-radius: 3px;
-    border: 1px solid #ccc;
+    border-radius: 5px;
+    border: 2px solid #ccc;
 }
 
 textarea {
