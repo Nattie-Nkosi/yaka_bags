@@ -69,8 +69,7 @@ section {
 /* ----- HEADINGS ----- */
 h1,
 h2,
-h3,
-h4 {
+h3 {
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -94,7 +93,7 @@ h2 {
 
 h3 {
     font-size: 110%;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 h2:after {
@@ -209,20 +208,6 @@ input[type="submit"]:active {
 /* HEADER */
 /* ----------------------------------------------- */
 
-header {
-    background-image: -webkit-gradient(linear,
-            left top,
-            left bottom,
-            from(rgba(0, 0, 0, 0.7)),
-            to(rgba(0, 0, 0, 0.7))),
-        url(img/hero-min.jpeg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url(img/hero-min.jpeg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    background-attachment: fixed;
-}
 
 .hero-text-box {
     position: absolute;
@@ -649,27 +634,6 @@ select,
 textarea {
     width: 100%;
     padding: 7px;
-    border: 1px solid #e5e5e5;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    appearance: unset;
-    -moz-appearance: unset;
-    -webkit-appearance: unset;
-    -o-appearance: unset;
-    -ms-appearance: unset;
-    outline: none;
-    -moz-outline: none;
-    -webkit-outline: none;
-    -o-outline: none;
-    -ms-outline: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    color: #333;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    -ms-box-sizing: border-box;
     border-radius: 3px;
     border: 1px solid #ccc;
 }
