@@ -62,8 +62,8 @@
           <ul class="main-nav js--main-nav">
             <li><a href="#features">features</a></li>
             <li><a href="#bags">Bags</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="#talk">Talk To Us</a></li>
+            <li><a href="/about.html">About Us</a></li>
+            <li><a href="#fancy-form">Talk To Us</a></li>
           </ul>
           <a class="mobile-nav-icon js--nav-icon"
             ><i class="ion-navicon-round"></i
@@ -75,7 +75,7 @@
           PREMIUM BACKPACKS, <br />
           WITH A PERSONAL TOUCH
         </h1>
-        <a class="btn btn-full js--scroll-to-start" href="#">ENQUIRE NOW</a>
+        <a class="btn btn-full" href="#fancy-form">ENQUIRE NOW</a>
       </div>
     </header>
 
@@ -185,10 +185,10 @@
     </section>
 
     <section class="bags-info">
-      <div class="row">
+      <div class="row" id="box1">
         <h2>Kiddies Backpacks</h2>
       </div>
-      <div class="row">
+      <div class="row" id="box2">
         <div class="row js--wp-1">
           <div class="gallery">
             <figure class="gallery__item gallery__item--1">
@@ -230,7 +230,7 @@
             </h3>
             
             <div class="order">
-              <a class="btn btn-full js--scroll-to-start" href="#">Order Now</a>
+              <a class="btn btn-full" href="#fancy-form">Order Now</a>
             </div>
         </div>
         </div>
@@ -290,101 +290,78 @@
             <a href="https://www.facebook.com/Yaka.Bags">@Yaka.Bags</a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="section-form js--section-form" id="talk">
-      <div class="row">
-        <h2>We're happy to hear from you</h2>
-      </div>
-
-      <div class="row">
-          <div class="col span-3-of-3 box">
-            <div class="row">
-              <form method="post" action="mailer.php" class="contact-form">
-                <div class="row">
-                  <div class="col span-1-of-3">
-                    <label for="name">Name</label>
-                  </div>
-                  <div class="col span-2-of-3">
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="your name"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col span-1-of-3">
-                    <label for="email">Email</label>
-                  </div>
-                  <div class="col span-2-of-3">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="your email"
-                      required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}"
-                    />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col span-1-of-3">
-                    <label for="tel">Contact Number</label>
-                  </div>
-                  <div class="col span-2-of-3">
-                    <input
-                      type="tel"
-                      name="tel"
-                      id="tel"
-                      placeholder="Phone"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col span-1-of-3">
-                    <label for="message">Drop a line</label>
-                  </div>
-                  <div class="col span-2-of-3">
-                    <textarea name="message" placeholder="Your message"></textarea>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col span-1-of-3">
-                    <label for="">&nbsp;</label>
-                  </div>
-                  <div class="col span-2-of-3">
-                    <input type="submit" value="Sent it" />
-                  </div>
-                </div>
-              </form>
-            </div>
-        </div>
-        <div class="col span-3-of-3 box">
-          <div class="row">
-            <i class="fa fa-map-marker" style="font-size:60px; color:#882462; margin-bottom: 10px"></i>
+        <div class="col span-1-of-4 box">
+          <img src="resources/img/city.jpg" alt="Sandton" />
+          <h3>Kempton Pack</h3>
+          <div class="city-feature">
+            <i class="ion-ios-person icon-small"></i>
+            3700+ happy cutomers
           </div>
-           <div class="row">
-            <h3>
-              <p>Unit 54 Sheffield 2 </br>
-                Cnr Maritz & Bergrivier Drive </br>
-                Terenure </br>
-                Kempton Park </br>
-                1619 <br>
-                <strong>Phone :</strong> +27 79 626 3991<br>
-                <strong>Email :</strong> <a href="mailto:hello@yakabags.co.za">hello@yakabags.co.za</a> </p>
-              
-              </h3>
-           </div>
-  
+          <!-- <div class="city-feature">
+            <i class="ion-ios-star icon-small"></i>
+            160+ top colors
+          </div> -->
+          <div class="city-feature">
+            <i class="ion-social-facebook icon-small"></i>
+            <a href="https://www.facebook.com/Yaka.Bags">@yaka_bags</a>
+          </div>
+        </div>
       </div>
-      </div>
-      
-      
     </section>
+
+    <section id="fancy-form">
+      <div class="container">
+        <div class="form-section">
+          <!-- Form left -->
+          <div class="form-left row">
+            <h2>Get In Touch</h2>
+            <!-- <p>Contact Us for latest Updates and news</p> -->
+
+            <h4>Address</h4>
+            <span>
+              Unit 54 Sheffield 2 </br>
+              Cnr Maritz & Bergrivier Drive </br>
+              Terenure </br>
+              Kempton Park </br>
+              1619 <br>
+            </span>
+            <hr><br><br>
+
+            <h4>Phone</h4>
+            <span>+27 79 626 3991<br></span>
+            <hr><br><br>
+
+            <h4>Email</h4>
+            <span><a href="mailto:hello@yakabags.co.za">hello@yakabags.co.za</a></span>
+            <hr><br><br>
+
+
+            <!-- Social Media Icons -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+          <!-- Form right -->
+          <div class="form-right row">
+            <h2>Contact Us</h2>
+            <form action="">
+              <label for="name">Name</label><br>
+              <input type="text" name="name"><br><br>
+              <label for="email">Email</label><br>
+              <input type="email" name="email"><br><br>
+              <label for="tel">Phone</label><br>
+              <input type="tel" name="tel"><br><br>
+              <label for="message">Message</label><br>
+              <textarea name="message" id="" cols="30" rows="7"></textarea><br><br>
+              <div class="col span-2-of-3">
+                <input type="submit" value="Sent it" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <footer>
       <div class="row">

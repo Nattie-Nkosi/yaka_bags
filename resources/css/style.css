@@ -376,8 +376,19 @@ header {
 /* BAGS INFO SECTION */
 /* ----------------------------------------------- */
 .bags-info {
-    display: flex;
+    display: grid;
+    grid-template-areas: 
+        "box1"
+        "box2";
     align-items: center;
+}
+
+#box1 {
+    grid-area: box1;
+}
+
+#box2 {
+    grid-area: box2;
 }
 
 .bags-info > .info {
@@ -634,64 +645,139 @@ cite img {
 }
 
 /* ----------------------------------------------- */
-/* FORM */
+/* SECTION-FORM */
 /* ----------------------------------------------- */
-
-.contact-form {
-    width: 60%;
-    margin: 0 auto;
+#fancy-form .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select,
-textarea {
-    width: 100%;
-    padding: 7px;
-    border: 1px solid #e5e5e5;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    appearance: unset;
-    -moz-appearance: unset;
-    -webkit-appearance: unset;
-    -o-appearance: unset;
-    -ms-appearance: unset;
-    outline: none;
-    -moz-outline: none;
-    -webkit-outline: none;
-    -o-outline: none;
-    -ms-outline: none;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    color: #333;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    border-radius: 5px;
-    border: 2px solid #ccc;
+.form-section {
+    margin-top: 5rem;
+    display: grid;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-textarea {
-    height: 100px;
+.form-left h1 {
+    padding: 0;
+    margin: 0;
 }
 
-input[type="checkbox"] {
-    margin: 10px 5px 10px 0;
+.line {
+    border-bottom: 2px solid #882462;
+    width: 8px;
+    margin-left: 0;
 }
 
-*:focus {
-    outline: none;
+.form-left hr {
+    width: 25rem;
+    margin-left: 0;
+    border: 1px solid #882462;
 }
 
-.success {
-    background-color: rgb(38, 192, 68, 0.8);
+.form-left span {
+    color: #882462;
+    font-weight: bold;
 }
 
-.error {
-    background-color: rgb(209, 46, 46, 0.8);
+form {
+    padding-top: 2rem;
+}
+
+.fa {
+    padding: 8px;
+    font-size: 18px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    color: #882462;
+}
+
+form label {
+    padding: 0;
+    margin: 0;
+}
+
+     input[type="text"],
+     input[type="email"], 
+     input[type="tel"],
+     textarea {
+        padding: 0.6rem;
+        width: 27rem;
+        border: 1px solid #e5e5e5;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        appearance: unset;
+        -moz-appearance: unset;
+        -webkit-appearance: unset;
+        -o-appearance: unset;
+        -ms-appearance: unset;
+        outline: none;
+        -moz-outline: none;
+        -webkit-outline: none;
+        -o-outline: none;
+        -ms-outline: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        color: #333;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        border-radius: 5px;
+        border: 2px solid #ccc;
+}
+
+
+@media (max-width: 968px){
+
+    #fancy-form .form-section{
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .form-section .form-right {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    input[type="text"],
+    input[type="email"], 
+    input[type="tel"],
+    textarea {
+       padding: 0.6rem;
+       width: 24rem;
+       border: 1px solid #e5e5e5;
+       border-top-left-radius: 5px;
+       border-bottom-right-radius: 5px;
+       appearance: unset;
+       -moz-appearance: unset;
+       -webkit-appearance: unset;
+       -o-appearance: unset;
+       -ms-appearance: unset;
+       outline: none;
+       -moz-outline: none;
+       -webkit-outline: none;
+       -o-outline: none;
+       -ms-outline: none;
+       font-family: 'Open Sans', sans-serif;
+       font-size: 15px;
+       color: #333;
+       box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       -webkit-box-sizing: border-box;
+       -o-box-sizing: border-box;
+       -ms-box-sizing: border-box;
+       border-radius: 5px;
+       border: 2px solid #ccc;
+}
 }
 
 /* ----------------------------------------------- */

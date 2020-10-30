@@ -8,6 +8,21 @@
     .row {
         padding: 0 2%;
     }
+
+    #fancy-form {
+        display: grid;
+        grid-template-areas: 
+            "top1"
+            "bottom1";
+    }
+
+    .form-left {
+        grid-area: top1;
+    }
+
+    .form-right {
+        grid-area: bottom1;
+    }
 }
 
 
@@ -68,6 +83,21 @@
     .contact-form {
         width: 80%;
     }
+
+    #fancy-form {
+        display: grid;
+        grid-template-areas: 
+            "top1"
+            "bottom1";
+    }
+
+    .form-left {
+        grid-area: top1;
+    }
+
+    .form-right {
+        grid-area: bottom1;
+    }
 }
 
 
@@ -76,6 +106,22 @@
 @media only screen and (max-width: 767px) {
     body {
         font-size: 16px;
+    }
+
+    header {
+        background-image: -webkit-gradient(linear,
+            left top,
+            left bottom,
+            from(rgba(0, 0, 0, 0.7)),
+            to(rgba(0, 0, 0, 0.7))),
+        url(img/hero-min.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(img/hero-min.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+    background-attachment: fixed;
     }
 
     section {
@@ -217,5 +263,36 @@
     .contact-form {
         width: 100%;
     }
+
+    input[type="text"],
+    input[type="email"], 
+    input[type="tel"],
+    textarea {
+       padding: 0.6rem;
+       width: 12rem;
+       border: 1px solid #e5e5e5;
+       border-top-left-radius: 5px;
+       border-bottom-right-radius: 5px;
+       appearance: unset;
+       -moz-appearance: unset;
+       -webkit-appearance: unset;
+       -o-appearance: unset;
+       -ms-appearance: unset;
+       outline: none;
+       -moz-outline: none;
+       -webkit-outline: none;
+       -o-outline: none;
+       -ms-outline: none;
+       font-family: 'Open Sans', sans-serif;
+       font-size: 15px;
+       color: #333;
+       box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       -webkit-box-sizing: border-box;
+       -o-box-sizing: border-box;
+       -ms-box-sizing: border-box;
+       border-radius: 5px;
+       border: 2px solid #ccc;
+}
 
 }
